@@ -14,14 +14,14 @@ data class Area(
 
 )
 
-data class GeoPosition (
+data class GeoPosition(
     @SerializedName("Latitude")
     var latitude: String,
     @SerializedName("Longitude")
     var longitude: String
 )
 
-data class AdministrativeArea (
+data class AdministrativeArea(
     @SerializedName("EnglishName")
     var EnglishName: String
 )
