@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tvLongitude"
+        app:layout_constraintEnd_toEndOf="@+id/tvLongitude"
+        app:layout_constraintStart_toStartOf="@+id/tvLongitude"
+        app:layout_constraintTop_toBottomOf="@+id/tvProvinceName" />
+
+    <TextView
+        android:id="@+id/tvLocalizedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tvProvinceName"
+        app:layout_constraintEnd_toEndOf="@+id/tvProvinceName"
+        app:layout_constraintStart_toStartOf="@+id/tvProvinceName"
+        app:layout_constraintTop_toBottomOf="@+id/tvKey" />
+
+    <TextView
+        android:id="@+id/tvProvinceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tvLatitude"
+        app:layout_constraintEnd_toEndOf="@+id/tvLatitude"
+        app:layout_constraintStart_toStartOf="@+id/tvLatitude"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocalizedName" />
+
+    <TextView
+        android:id="@+id/tvKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tvLocalizedName"
+        app:layout_constraintEnd_toEndOf="@+id/tvLocalizedName"
+        app:layout_constraintStart_toStartOf="@+id/tvLocalizedName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLatitude" />
+</androidx.constraintlayout.widget.ConstraintLayout>
